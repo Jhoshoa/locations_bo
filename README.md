@@ -36,3 +36,9 @@ Use the Python Environment from Your Virtual Environment:
 - You can activate your virtual environment before starting Jupyter Notebook to ensure that it uses the correct interpreter.
 - Dependency Management
 - Isolation
+
+## Run docker composer
+```bash
+$ docker compose up -d
+$ docker-compose logs db
+```
