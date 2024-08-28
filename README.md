@@ -19,10 +19,33 @@ $ deactivate
 ```bash
 $ pip install jupyter
 ```
-or
 ```bash
 $ pip install -r requirements.txt
 ```
+## Notes
+It seems that after installing jupyther it comes with ipykernel library, but if not please install this way
+```bash
+$ pip install ipykernel    
+$ pip show ipykernel     -- To verify if it is installed
+
+$ pip install psycopg2-binary
+$ pip install psycopg2
+$ pip install pandas
+```
+To ensure that the jupyter uses the vistual environment use this command:
+
+- Replace .venv with a name that represents your virtual environment.
+- The --display-name option specifies what will be shown in the Jupyter Notebook interface.
+
+```bash
+$ python -m ipykernel install --user --name=.venv --display-name "Python (venv)"
+```
+
+To launch jupyter notebook in the localhost run this
+```bash
+$ jupyter notebook
+```
+
 ## To export the dependencies of the app
 ```bash
 $ pip freeze > requirements.txt
@@ -42,3 +65,9 @@ Use the Python Environment from Your Virtual Environment:
 $ docker compose up -d
 $ docker-compose logs db
 ```
+
+Search here
+https://fichacomunidad.ine.gob.bo/
+https://es.wikipedia.org/wiki/Municipios_de_Bolivia
+https://es.wikipedia.org/wiki/Anexo:Municipios_de_Bolivia
+https://es.wikipedia.org/wiki/Departamento_de_Chuquisaca
